@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class timerScript : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class timerScript : MonoBehaviour
         }
         else {
             Time.timeScale = 0;
+            SceneManager.LoadScene("Juego");
             }
     }
 }
